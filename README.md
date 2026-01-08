@@ -9,8 +9,9 @@ Install wine and winetricks
 
 
 Create a new wine prefix for PRK
-
-´$ env WINEPREFIX=~/.wine-prk wineboot -u´
+´´´
+$ env WINEPREFIX=~/.wine-prk wineboot -u
+´´´
 
 
 Run winecfg and under the "graphics" tab enable virtual desktop and set it to the resolution of your screen
