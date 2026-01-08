@@ -9,6 +9,7 @@ Install wine and winetricks
 
 
 Create a new wine prefix for PRK
+
 ´´´
 $ env WINEPREFIX=~/.wine-prk wineboot -u
 ´´´
