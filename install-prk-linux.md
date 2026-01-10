@@ -25,7 +25,7 @@ From now on the virtual desktop will pop up every time you run a wine or winetri
 
 Install fonts and dxvk using winetricks
 ```
-$ WINEPREFIX=~/.wine-prk winetricks arial verdana dxvk
+$ WINEPREFIX=~/.wine-prk winetricks allfonts dxvk
 ```
 
 
@@ -56,54 +56,20 @@ $ chmod a+x ./PRK.Launcher
 ```
 
 
-Run the Launcher for the first time to make sure it works and to generate the LauncherSettings.json file, then exit the launcher without doing anything yet
+Run the Launcher (Working directory must be where the Launcher is)
 ```
 $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
 
 
-Edit the LauncherSettings.json file and make sure the compatibility tool is set correctly, on my system wine is located under /usr/bin
+From within the launcher set the path for the compatibility tool (/usr/bin/wine and ~/.wine-prk)
 
-Example:
-> ..."CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...
+The following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
+Using other settings than this may or may not work for you.
 
-This last step should be doable within the launcher GUI but as of this writing that does not appear to work, so we are editing this file manually
-
-
-Now run the launcher and download/patch the game client, but don't start the game yet
-```
-$ WINEPREFIX=~/.wine-prk ./PRK.Launcher
-```
+Then download, patch and run the game
 
 
-Make sure the path for the compatibility tool is correct.
-You can also set the following settings: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
 
-These settings has been working fine on my system. Using other settings than this may or may not work for you
-
-
-Now that the game should be downloaded, exit the launcher and enter the client directory
-```
-$ cd client
-```
-
-
-Rename the AwesomiumProcess.exe file so that the game are unable to find and run it
-```
-$ mv AwesomiumProcess.exe AwesomiumProcess.exe_
-```
-
-
-This will prevent windows inside the game to load online web content, something that would always crash the game for me
-
-
-At this point the game should run smoothly
-
-
-Change directory back to where the launcher is (this is necessary), and run the game
-```
-$ cd ..
-$ WINEPREFIX=~/.wine-prk ./PRK.Launcher
-```
