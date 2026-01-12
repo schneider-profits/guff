@@ -62,9 +62,12 @@ $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
 
 
-From within the launcher set the path for the compatibility tool (/usr/bin/wine and ~/.wine-prk)
+From within the launcher set the path for the compatibility tool (/usr/bin/wine and ~/.wine-prk) and save.
 
-The following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
+Note: The Launcher will sometimes crash at this step. If it does, save some other settings like the resolution, and exit the Launcher.
+That should generate the LauncherSettings.json file where we can update the path to the compatibility tool manually.
+
+Moving on, the following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
 Using other settings than this may or may not work for you.
 
