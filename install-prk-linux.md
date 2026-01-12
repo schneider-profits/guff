@@ -95,7 +95,7 @@ I'm not sure which one of these system folders is being used, so for now lets en
 
 <br/><br/>
 Rename the .dll files to all lowercase (ddraw.dll, d3dimm.dll)
-
+<br/><br/>
 
 cd to `~/.wine-prk/drive_c/windows/system32/` and make the dgVoodooCpl.exe file executable
 ```
