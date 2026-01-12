@@ -87,7 +87,7 @@ Rename the file `~/.wine-prk/drive_c/windows/system32/ddraw.dll` to `~/.wine-prk
 Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_`
 
 
-Copy the 4 files under `~/.wine-prk/drive_c/win/dist/directx/dgVoodoo2_79_3/` and paste them into both system folders
+Copy the 4 files under `~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/` and paste them into both system folders
 `~/.wine-prk/drive_c/windows/system32/` and `~/.wine-prk/drive_c/windows/syswow64/`
 
 <br/>
