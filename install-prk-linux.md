@@ -124,7 +124,11 @@ Under the "Libraries" tab add a new "override for library" called ddraw (accept 
 
 It should show up in the list of overrides as `ddraw (native, builtin)`
 
+Do the same for d3dimm
+<br/><br/>
+
 Make sure the 4 files are not present under the AO client directory, just to be sure.
+<br/><br/>
 
 Now run the PRK Launcher
 ```
@@ -135,7 +139,7 @@ $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 Set the game to run in Windowed mode and set the DirectXLayer to "None"
 
 
-Running the game in Fullscreen mode makes the game window tiny for some reason so Windowed mode is the way to go for now.
+Running the game in Fullscreen mode makes the game window tiny for some reason so Windowed mode (with or without border) is the way to go for now.
 
 
 At this point the game should run with full performance and the logo should be visible in the bottom right corner
