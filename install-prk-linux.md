@@ -113,7 +113,7 @@ then run it
 $ WINEPREFIX=~/.wine-prk ./dgVoodooCpl.exe
 ```
 
-Here I selected my nvidia graphics card as device on the first tab and enabled the dgVoodoo Logo on the third tab.
+Here I selected my nvidia graphics card as adapter on the first tab and enabled the dgVoodoo Watermark on the third tab.
 
 <br/><br/>
 Do the exact same procedure under the syswow64 folder.
