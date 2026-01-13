@@ -142,6 +142,7 @@ just to be sure there are no conflicts with the system files we just installed.
 
 Now cd to the PRK Launcher and run it
 ```
+$ cd ~/.wine-prk/drive_c/linux
 $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
 
