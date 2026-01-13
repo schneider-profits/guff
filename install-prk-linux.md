@@ -72,12 +72,14 @@ That should generate the LauncherSettings.json file where we can update the path
 Example of LauncherSettings.json: 
 > ..."CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...
 
-<br/><br/><br/>
+<br/><br/>
 Moving on, the following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
-Using other settings than this may or may not work for you.
 
 Then download, patch and run the game.
+
+<br/><br/>
+Note: Using other settings than this may or may not work for you. There are situations where the T&L HAL driver interferes with the desktop somehow, making the game run extremely slow, which is why I prefer to start with the HAL driver at this early stage. If you have issues with the game being unresponsive, try running it with a lower resolution than the screen/virtual desktop until everything is installed and configured properly.
 
 <br/><br/>
 So far so good, but enabling FPS in game (Ctrl+Alt F) shows the game running with only 40-70 FPS,
