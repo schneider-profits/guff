@@ -1,8 +1,10 @@
-## Running Project Rubi-Ka in Linux using wine
+# Running Project Rubi-Ka in Linux using wine
 <br/>
 
 I am using Arch linux and the vanilla wine that is already in the repositories.
 Arch uses quite recent versions of software but I don't see why this should not work on most distros.
+
+Lines starting with $ indicates a command to be executed in a shell, the $ should not be included in the command.
 
 <br/><br/>
 Install wine and winetricks
@@ -86,24 +88,29 @@ Lets fix that
 
 <br/>
 
-### How to apply dgVoodoo2 version 2.79.3 to PRK
+## How to apply dgVoodoo2 version 2.79.3 to PRK
 <br/>
 
 Note: Newer versions of dgVoodoo2 does not work with wine
 
 
 Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_`
-
+```
+$ mv ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_
+```
 
 Copy the 4 files under `~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/` 
 
 and paste them into the Windows system folder `~/.wine-prk/drive_c/windows/syswow64/`
+```
+$ cp ~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/* ~/.wine-prk/drive_c/windows/syswow64/
+```
 
 <br/><br/>
 
 cd to `~/.wine-prk/drive_c/windows/syswow64/` and make the dgVoodooCpl.exe file executable
 ```
-chmod a+x ./dgVoodooCpl.exe
+$ chmod a+x ./dgVoodooCpl.exe
 ```
 
 then run it
@@ -146,3 +153,20 @@ With dgVoodoo2 enabled, running the game in Fullscreen mode makes the game windo
 
 
 At this point the game should run with full performance and the logo should be visible in the bottom right corner
+
+<br/>
+
+## Here is a simple bash script that can be used to start the game
+<br/>
+
+```
+#!/usr/bin/sh
+cd ~/.wine-prk/drive_c/linux
+WINEPREFIX=~/.wine-prk 
+./PRK.Launcher
+```
+
+Save it as prk.sh and make it executable
+```
+$ chmod a+x ./prk.sh
+```
