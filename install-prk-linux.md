@@ -4,6 +4,8 @@
 I am using Arch linux and the vanilla wine that is already in the repositories.
 Arch uses quite recent versions of software but I don't see why this should not work on most distros.
 
+<br/>
+
 Lines starting with $ indicates a command to be executed in a shell, the $ should not be included in the command.
 
 <br/><br/>
@@ -49,14 +51,9 @@ $ mv linux ~/.wine-prk/drive_c/
 ```
 
 
-Change directory to where the PRK launcher is
+Change directory to where the PRK launcher is and make it executable
 ```
 $ cd ~/.wine-prk/drive_c/linux
-```
-
-
-Make the PRK.Launcher executable
-```
 $ chmod a+x ./PRK.Launcher
 ```
 
@@ -72,7 +69,9 @@ From within the launcher set the path for the compatibility tool (/usr/bin/wine 
 Note: The Launcher will sometimes crash at this step. If it does, save some other settings like the resolution, and exit the Launcher.
 That should generate the LauncherSettings.json file where we can update the path to the compatibility tool manually.
 
-Example of LauncherSettings.json: `..."CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...`
+Example of LauncherSettings.json: 
+> ..."CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...
+
 <br/><br/><br/>
 Moving on, the following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
@@ -92,12 +91,14 @@ Lets fix that
 <br/>
 
 Note: Newer versions of dgVoodoo2 does not work with wine
-
+<br/><br/>
 
 Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_`
 ```
 $ mv ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_
 ```
+
+<br/>
 
 Copy the 4 files under `~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/` 
 
@@ -106,16 +107,12 @@ and paste them into the Windows system folder `~/.wine-prk/drive_c/windows/syswo
 $ cp ~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/* ~/.wine-prk/drive_c/windows/syswow64/
 ```
 
-<br/><br/>
+<br/>
 
-cd to `~/.wine-prk/drive_c/windows/syswow64/` and make the dgVoodooCpl.exe file executable
+Change directory to `~/.wine-prk/drive_c/windows/syswow64/` and make the dgVoodooCpl.exe file executable, then run it
 ```
+$ cd ~/.wine-prk/drive_c/windows/syswow64
 $ chmod a+x ./dgVoodooCpl.exe
-```
-
-then run it
-
-```
 $ WINEPREFIX=~/.wine-prk ./dgVoodooCpl.exe
 ```
 
@@ -140,7 +137,7 @@ Make sure the 4 files (DDraw.dll, D3DImm.dll, dgVoodooCpl.exe and dgVoodoo.conf)
 just to be sure there are no conflicts with the system files we just installed.
 <br/><br/>
 
-Now cd to the PRK Launcher and run it
+Now change directory to the PRK Launcher and run it
 ```
 $ cd ~/.wine-prk/drive_c/linux
 $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
