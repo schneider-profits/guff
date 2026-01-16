@@ -137,6 +137,10 @@ Do the same for d3dimm
 
 Make sure the 4 files (DDraw.dll, D3DImm.dll, dgVoodooCpl.exe and dgVoodoo.conf) are not present under the AO client directory `~/.wine-prk/drive_c/linux/client`,
 just to be sure there are no conflicts with the system files we just installed.
+```
+$ rm -f ~/.wine-prk/drive_c/linux/client/{DDraw.dll,D3DImm.dll,dgVoodooCpl.exe,dgVoodoo.conf}
+```
+
 <br/><br/>
 
 Now change directory to the PRK Launcher and run it
