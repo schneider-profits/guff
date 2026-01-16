@@ -152,7 +152,7 @@ Set the game to run in Windowed mode and set the DirectXLayer to "None"
 With dgVoodoo2 enabled, running the game in Fullscreen mode makes the game window tiny for some reason so Windowed mode (with or without border) is the way to go for now.
 
 
-At this point the game should run with full performance and the logo should be visible in the bottom right corner
+At this point the game should run with full performance and the logo should be visible in the bottom right corner. There are a few places in the game where the FPS will drop, but for the most part it runs close to 100 FPS
 
 <br/>
 
@@ -161,9 +161,7 @@ At this point the game should run with full performance and the logo should be v
 
 ```
 #!/usr/bin/sh
-cd ~/.wine-prk/drive_c/linux
-WINEPREFIX=~/.wine-prk 
-./PRK.Launcher
+wine start /b /d ~/.wine-prk/drive_c/linux /exec ~/.wine-prk/drive_c/linux/PRK.Launcher
 ```
 
 Save it as prk.sh and make it executable
