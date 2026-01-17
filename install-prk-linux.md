@@ -90,26 +90,26 @@ Lets fix that
 <br/>
 
 ## How to apply dgVoodoo2 version 2.79.3 to PRK
+
 <br/>
 
 Note: Newer versions of dgVoodoo2 does not work with wine
+
 <br/><br/>
 
-Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_`
+Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll.original`
 ```
-$ mv ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll_
+$ mv ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll ~/.wine-prk/drive_c/windows/syswow64/ddraw.dll.original
 ```
 
-<br/>
+<br/><br/>
 
-Copy the 4 files under `~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/` 
-
-and paste them into the Windows system folder `~/.wine-prk/drive_c/windows/syswow64/`
+Copy the 4 files under `~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/` and paste them into the Windows system folder `~/.wine-prk/drive_c/windows/syswow64/`
 ```
 $ cp ~/.wine-prk/drive_c/linux/dist/directx/dgVoodoo2_79_3/* ~/.wine-prk/drive_c/windows/syswow64/
 ```
 
-<br/>
+<br/><br/>
 
 Change directory to `~/.wine-prk/drive_c/windows/syswow64/` and make the dgVoodooCpl.exe file executable, then run it
 ```
@@ -133,6 +133,7 @@ Under the "Libraries" tab add a new "override for library" called ddraw (accept 
 It should show up in the list of overrides as `ddraw (native, builtin)`
 
 Do the same for d3dimm
+
 <br/><br/>
 
 Make sure the 4 files (DDraw.dll, D3DImm.dll, dgVoodooCpl.exe and dgVoodoo.conf) are not present under the AO client directory `~/.wine-prk/drive_c/linux/client`,
@@ -155,6 +156,7 @@ Set the game to run in Windowed mode and set the DirectXLayer to "None"
 
 With dgVoodoo2 enabled, running the game in Fullscreen mode makes the game window tiny for some reason so Windowed mode (with or without border) is the way to go for now.
 
+<br/>
 
 At this point the game should run with full performance and the logo should be visible in the bottom right corner. There are a few places in the game where the FPS will drop, but for the most part it runs close to 100 FPS
 
