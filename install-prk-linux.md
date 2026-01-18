@@ -64,7 +64,7 @@ $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
 
 
-From within the launcher set the path for the compatibility tool (/usr/bin/wine and ~/.wine-prk) and save.
+From within the launcher set the path for the client dir (\~/.wine-prk/drive_c/linux/client), tool path (/usr/bin/wine) and prefix root (\~/.wine-prk) and save.
 
 Note: The Launcher will sometimes crash at this step. If it does, save some other settings like the resolution, and exit the Launcher.
 That should generate the LauncherSettings.json file where we can update the path to the compatibility tool manually.
