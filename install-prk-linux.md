@@ -70,7 +70,7 @@ Note: The Launcher will sometimes crash at this step. If it does, save some othe
 That should generate the LauncherSettings.json file where we can update the path to the compatibility tool manually.
 
 Example of LauncherSettings.json: 
-> ..."CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...
+> ..."ClientPath":"~/.wine-prk2/drive_c/linux/client","CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"~/.wine-prk"...
 
 <br/><br/>
 Moving on, the following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
