@@ -65,17 +65,12 @@ $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 
 
 From within the launcher set the path for the client dir `~/.wine-prk/drive_c/linux/client`, tool path `/usr/bin/wine` and prefix root `~/.wine-prk` and save.
+<br/><br/>
 
-
-Note: If the launcher crashes during this step, try editing the file LauncherSettings.json manually
-<br/>
-Example of LauncherSettings.json: 
-
-> ..."ClientPath":"\~/.wine-prk/drive_c/linux/client","CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"\~/.wine-prk"...
-
+Note: If the launcher crashes during this step, it is also possible to configure the compatibility tool in the file `LauncherSettings.json`
 
 <br/><br/>
-Moving on, the following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
+The following game settings seems to work well: Device - HAL, Resolution - what your screen is, Mode - Fullscreen, DirectX Layer - None
 
 
 Then download, patch and run the game.
