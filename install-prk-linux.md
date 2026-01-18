@@ -14,7 +14,7 @@ Install wine and winetricks
 <br/><br/>
 Create a new wine prefix for PRK
 ```
-$ env WINEPREFIX=~/.wine-prk wineboot -u
+$ WINEPREFIX=~/.wine-prk wineboot -u
 ```
 
 
@@ -54,8 +54,7 @@ $ mv linux ~/.wine-prk/drive_c/
 Change directory to where the PRK launcher is and make the launcher and the updater executable
 ```
 $ cd ~/.wine-prk/drive_c/linux
-$ chmod a+x ./PRK.Launcher
-$ chmod a+x ./PRK.Launcher.Updater
+$ chmod a+x ./PRK.Launcher ./PRK.Launcher.Updater
 ```
 
 
