@@ -51,10 +51,11 @@ $ mv linux ~/.wine-prk/drive_c/
 ```
 
 
-Change directory to where the PRK launcher is and make it executable
+Change directory to where the PRK launcher is and make the launcher and the updater executable
 ```
 $ cd ~/.wine-prk/drive_c/linux
 $ chmod a+x ./PRK.Launcher
+$ chmod a+x ./PRK.Launcher.Updater
 ```
 
 
