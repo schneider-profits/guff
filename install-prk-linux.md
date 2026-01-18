@@ -71,7 +71,7 @@ That should generate the LauncherSettings.json file where we can update the path
 
 Example of LauncherSettings.json: 
 
-> ..."ClientPath":"\~/.wine-prk2/drive_c/linux/client","CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"\~/.wine-prk"...
+> ..."ClientPath":"\~/.wine-prk/drive_c/linux/client","CompatibilityToolEnabled":true,"CompatibilityToolPath":"/usr/bin/wine","CompatibilityToolPrefix":"\~/.wine-prk"...
 
 
 <br/><br/>
