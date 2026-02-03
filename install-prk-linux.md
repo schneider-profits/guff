@@ -58,7 +58,7 @@ $ chmod a+x ./PRK.Launcher ./PRK.Launcher.Updater
 ```
 
 
-Run the Launcher (Working directory must be where the Launcher is)
+Run the Launcher (Working directory must be where the Launcher is) and make sure the Launcher has patched itself to the latest version (Older versions of the Launcher will crash on the next step)
 ```
 $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
