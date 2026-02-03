@@ -58,11 +58,15 @@ $ chmod a+x ./PRK.Launcher ./PRK.Launcher.Updater
 ```
 
 
-Run the Launcher (Working directory must be where the Launcher is) and make sure the Launcher has patched itself to the latest version (Older versions of the Launcher will crash on the next step)
+Run the Launcher (Working directory must be where the Launcher is)
 ```
 $ WINEPREFIX=~/.wine-prk ./PRK.Launcher
 ```
 
+<br/>
+
+Note: Make sure the Launcher has patched itself to the latest version (Older versions of the Launcher will crash on the next step).
+<br/><br/>
 
 From within the launcher set the path for the client dir `~/.wine-prk/drive_c/linux/client`, tool path `/usr/bin/wine` and prefix root `~/.wine-prk` and save.
 <br/><br/>
