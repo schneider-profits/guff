@@ -60,7 +60,7 @@ $ chmod a+x ./PRK.Launcher ./PRK.Launcher.Updater
 
 Run the Launcher (Working directory must be where the Launcher is)
 ```
-$ WINEPREFIX=~/.wine-prk ./PRK.Launcher
+$ WINEPREFIX=~/.wine-prk wine ./PRK.Launcher
 ```
 
 <br/>
@@ -121,7 +121,7 @@ Change directory to `~/.wine-prk/drive_c/windows/syswow64/` and make the dgVoodo
 ```
 $ cd ~/.wine-prk/drive_c/windows/syswow64
 $ chmod a+x ./dgVoodooCpl.exe
-$ WINEPREFIX=~/.wine-prk ./dgVoodooCpl.exe
+$ WINEPREFIX=~/.wine-prk wine ./dgVoodooCpl.exe
 ```
 
 Here I selected my nvidia graphics card as adapter on the first tab and enabled the dgVoodoo watermark on the third tab.
@@ -153,7 +153,7 @@ $ rm -f ~/.wine-prk/drive_c/linux/client/{DDraw.dll,D3DImm.dll,dgVoodooCpl.exe,d
 Now change directory to the PRK Launcher and run it
 ```
 $ cd ~/.wine-prk/drive_c/linux
-$ WINEPREFIX=~/.wine-prk ./PRK.Launcher
+$ WINEPREFIX=~/.wine-prk wine ./PRK.Launcher
 ```
 
 
