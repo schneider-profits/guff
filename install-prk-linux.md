@@ -101,6 +101,10 @@ Note: Newer versions of dgVoodoo2 does not work with wine
 Note: Under normal circumstances you can simply drop the .dll files that comes with dgVoodoo2 into the directory where the game is located, and if the current working directory is where the game is located, they should be found and used. However, in this case the working directory needs to be where the PRK Launcher is, which is not the same directory as the game client.
 Because of that, we are going to replace the .dll files of the system, and tell wine to use those.
 
+<br/>
+
+Note: If you are using 32 bit version of wine, replace "syswow64" with "system32" in the following commands
+
 <br/><br/>
 
 Rename the file `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll` to `~/.wine-prk/drive_c/windows/syswow64/ddraw.dll.original`
