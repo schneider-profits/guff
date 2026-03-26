@@ -24,10 +24,11 @@ Under "Games", set GE-Proton9-27 as the compatibility tool for Project: Gorgon
 <br/><br/><br/>
 I have been using this compatibility tool for hours visiting several zones. Graphics seems fine and there is no "grass" bug. Memory stays between 5-8 GB.
 <br/><br/><br/>
+
 > [!TIP]
 > For KDE Plasma users I suggest configuring the game to run in windowed mode (not fullscreen), 
-> then right click the PG Window titlebar and select "More Actions" -> "Configure Special Window Settings"
-> Click "Add property" and select "No titlebar and frame", then check "Yes" on that
+ then right click the PG Window titlebar and select "More Actions" -> "Configure Special Window Settings"
+ Click "Add property" and select "No titlebar and frame", then check "Yes" on that
 
 <br/><br/>
 
