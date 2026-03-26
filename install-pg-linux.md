@@ -11,12 +11,12 @@ Install protonplus
 Start steam and install Project: Gorgon if it isn't installed already
 <br/><br/><br/>
 Close steam and start protonplus
-<br/><br/>
+<br/><br/><br/>
 Make sure steam is selected in the upper left drop-down
 <br/><br/>
 Under "Runners" go to Proton-GE and add "GE-Proton9-27" (You may have to click "Load More")
 <br/>
-> [!NOTE]
+> [!WARNING]
 > Newer versions of Proton-GE has a memory leak affecting Unity games. Version 9.27 does not appear to have this issue
 
 <br/>
