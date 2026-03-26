@@ -3,17 +3,17 @@
 Install steam
 <br/><br/><br/>
 Install protonplus
-<br/><br/>
+<br/>
 Note: This guide uses protonplus which is a gnome application, alternatively we can use protonup-qt
-<br/><br/>
+<br/><br/><br/>
 Start steam and install Project: Gorgon if it isn't installed already
-<br/><br/>
+<br/><br/><br/>
 Close steam and start protonplus
 <br/><br/>
 Make sure steam is selected in the upper left drop-down
 <br/><br/>
 Under "Runners" go to Proton-GE and add "GE-Proton9-27" (You may have to click "Load More")
-<br/><br/>
+<br/>
 Note: Newer versions of Proton-GE has a memory leak affecting Unity games. Version 9.27 does not appear to have this issue.
 <br/><br/>
 Under "Games", set GE-Proton9-27 as the compatibility tool for Project: Gorgon
