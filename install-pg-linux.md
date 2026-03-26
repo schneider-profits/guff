@@ -26,5 +26,5 @@ then right click the PG Window titlebar and select "More Actions -> Configure Sp
 Click "Add property" and select "No titlebar and frame", then check "Yes" on that
 <br/><br/>
 With this window rule enabled, Plasma will recognize the PG window and make it title and borderless.
-The advantage with this is that the game windows plays well with the desktop, and Alt-Tabbing works flawlessly.
+The advantage with this is that the game window plays well with the desktop, and Alt-Tabbing works flawlessly.
 The only disadvantage is that the taskbar will pop up if you move the mouse all the way to the bottom of the screen.
