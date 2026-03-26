@@ -1,5 +1,5 @@
 # Installing Project: Gorgon in Linux
-<br/><br/><br/>
+<br/><br/>
 Install steam
 <br/><br/><br/>
 Install protonplus
