@@ -27,8 +27,8 @@ I have been using this compatibility tool for hours visiting several zones. Grap
 
 > [!TIP]
 > For KDE Plasma users I suggest configuring the game to run in windowed mode (not fullscreen), 
-then right click the PG Window titlebar and select "More Actions" -> "Configure Special Window Settings"
-Click "Add property" and select "No titlebar and frame", then check "Yes" on that.
-With this window rule enabled, Plasma will recognize the PG window and make it title and borderless.
-The advantage with this is that the game window plays well with the desktop, and Alt-Tabbing works flawlessly.
-The only disadvantage is that the taskbar will pop up if you move the mouse all the way to the bottom of the screen.
+ then right click the PG Window titlebar and select "More Actions" -> "Configure Special Window Settings"
+ Click "Add property" and select "No titlebar and frame", then check "Yes" on that.
+ With this window rule enabled, Plasma will recognize the PG window and make it title and borderless.
+ The advantage with this is that the game window plays well with the desktop, and Alt-Tabbing works flawlessly.
+ The only disadvantage is that the taskbar will pop up if you move the mouse all the way to the bottom of the screen.
