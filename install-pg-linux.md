@@ -5,22 +5,20 @@ Install steam
 Install protonplus
 <br/>
 > [!NOTE]
-> This guide uses protonplus which is a gnome application, alternatively we can use protonup-qt
+> This guide uses protonup-qt, alternatively we can use protonplus
 
 <br/><br/>
 Start steam and install Project: Gorgon if it isn't installed already
 <br/><br/><br/>
-Close steam and start protonplus
+Close steam and start protonup-qt
 <br/><br/><br/>
-Make sure steam is selected in the upper left drop-down
+Make sure steam is selected and add version GE-Proton9-27 for GE-Proton
 <br/><br/>
-Under "Runners" go to Proton-GE and add "GE-Proton9-27" (You may have to click "Load More")
-<br/>
 > [!WARNING]
 > Newer versions of Proton-GE has a memory leak affecting Unity games. Version 9.27 does not appear to have this issue
 
 <br/>
-Under "Games", set GE-Proton9-27 as the compatibility tool for Project: Gorgon
+Click "Show game list" and set GE-Proton9-27 as the compatibility tool for Project: Gorgon
 <br/><br/><br/>
 I have been using this compatibility tool for hours visiting several zones. Graphics seems fine and there is no "grass" bug. Memory stays between 5-8 GB.
 <br/><br/><br/>
