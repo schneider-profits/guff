@@ -2,7 +2,7 @@
 <br/><br/>
 Install steam
 <br/><br/><br/>
-Install protonplus
+Install protonup-qt
 <br/>
 > [!NOTE]
 > This guide uses protonup-qt, alternatively we can use protonplus
