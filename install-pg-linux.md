@@ -1,5 +1,8 @@
 # Installing Project: Gorgon in Linux
 <br/><br/>
+> [!NOTE]
+> As of this writing, there are a couple of bugs with the proton that comes with steam so we are going to use proton-ge to avoid the "grass" bug, and we are going to use an older version to avoid the mamory leak issue that newer versions of proton-ge has for Unity based games
+<br/><br/>
 Install steam
 <br/><br/><br/>
 Install protonup-qt
